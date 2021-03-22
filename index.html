@@ -196,29 +196,32 @@
     <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label for="login-login">Логин</label>
+        <label class="visually-hidden" for="login-login">Логин</label>
         <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
       </p>
       <p>
-        <label for="login-password">Пароль</label>
+        <label class="visually-hidden" for="login-password">Пароль</label>
         <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="••••••••">
       </p>
       <p class="login-help">
         <label class="login-checkbox">
-          <input type="checkbox" name="remember">
+          <input class="visually-hidden" type="checkbox" name="remember">
           Запомните меня
         </label>
         <a class="restore" href="#">Я забыл пароль!</a>
       </p>
       <button class="button" type="submit">Войти</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
   <section class="modal modal-map">
-    <h2>Как до нас добраться</h2>
-    <!-- Здесь будет карта -->
-    <button class="modal-close" type="button">Закрыть</button>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616393258591!5m2!1sru!2sru"
+      width="766" height="560" style="border:0;" allowfullscreen="" loading="lazy"
+      title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
   </main>
