@@ -1044,9 +1044,19 @@ img {
 }
 
 .footer-copyright {
-  max-width: 150px;
+  max-width: 170px;
   margin: 0;
   justify-self: end;
+}
+
+.footer-copyright__item {
+  width: 140px;
+  text-align: center;
+}
+
+.footer-copyright .button {
+  
+  
 }
 
 /* Social button */
